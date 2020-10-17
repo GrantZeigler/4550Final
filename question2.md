@@ -31,3 +31,5 @@
   * Each system does not know anything about the other systems
 * Disadvantages:
   * All data must be transfered through the pipes
+  
+![](https://yuml.me/0b0c5194.jpg)
