@@ -13,6 +13,8 @@
   * Can't run multiple systems at the same time
   * Not very flexible
   * No realtime feedback
+
+![](https://yuml.me/8c2a50b4.jpg)
   
 ### Pipe and Filter Architecture
 * Two parts to these systems:
