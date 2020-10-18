@@ -1,6 +1,5 @@
 # Question 2 -- Grant Zeigler
 
-
 ### Batch Sequential Architecture
 * Uses a few stand alone systems that are fairly large
 * Must be done in a sequential order
