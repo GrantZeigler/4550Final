@@ -15,6 +15,8 @@
   * No realtime feedback
 
 ![](https://yuml.me/8c2a50b4.jpg)
+
+* Used in situations where the classes need some knowledge of what needs to be done in a specific instance. Also used when a single class needs to do multiple operations on the same data.
   
 ### Pipe and Filter Architecture
 * Two parts to these systems:
@@ -33,3 +35,5 @@
   * All data must be transfered through the pipes
   
 ![](https://yuml.me/0b0c5194.jpg)
+
+* Used in situations where multiple small operations are being done on the data, when it is done with one operation it is passed on to the next. This is also used in situations where the different operations need to be ran at the same time.
