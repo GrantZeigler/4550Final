@@ -27,6 +27,7 @@
   ![](https://yuml.me/3ace55b5.jpg)
   
   This fixes the class by having the function be extended through inheritance rather than directly modified
+  
 * Liskov Substitution Principle
   * Objects in a program should be replaceable with subtypes and the program should work fine.
   * Incorrect class diagram:
@@ -39,7 +40,19 @@
   ![](https://yuml.me/4a803d8b.jpg)
   
   This fixes the class since the subtype can replace the original easily, it just results in a slightly different output
+  
 * Interface Segregation Principle
   * It is better to develop client specific interfaces, rather than having one general purpose interface
+  * Incorrect class diagram
+  
+  ![](https://yuml.me/ce177bc3.jpg)
+  
+  This is incorrect since the single interface does all of the operations
+  * Correct class diagram
+  
+  ![](https://yuml.me/92258fa2.jpg)
+  
+  This is correct since the interfaces are specific to the operations
+  
 * Dependency Inversion Principle
   * Depend on abstractions not concretions
