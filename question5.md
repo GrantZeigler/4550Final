@@ -56,3 +56,16 @@
   
 * Dependency Inversion Principle
   * Depend on abstractions not concretions
+  
+  * Incorrect class diagram
+  
+  ![](http://yuml.me/340fbe76.jpg)
+  
+  This is incorrect since the dependency is done through a concretion
+  * Correct class diagram
+  
+  ![](https://yuml.me/2d0dac66.jpg)
+  
+  This is correct since the dependency is done through an abstraction
+  
+  
