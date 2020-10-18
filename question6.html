@@ -1,0 +1,154 @@
+<p>1. Factory Method vs. Abstract Factory</p>
+<ul>
+<li>Problems they solve
+<ul>
+<li>Factory Method:
+<ul>
+<li>Developer needs to create objects while allowing for different subclasses to be chosen</li>
+</ul>
+</li>
+<li>Abstract Factory:
+<ul>
+<li>The developer has several factory methods used, and wants to place them together under one interfact\e</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Solution
+<ul>
+<li>Factory Method:
+<ul>
+<li>Create an interface that creates objects</li>
+<li>The objects are all different subclasses</li>
+</ul>
+</li>
+<li>Abstract Factory:
+<ul>
+<li>Encapsulate groups of factories that have a common theme to create objects that are part of the theme</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Consequences
+<ul>
+<li>Factory Method:
+<ul>
+<li>Code only deals with interfaces, so it can work with any subclass</li>
+<li>Requires a subclass creator</li>
+</ul>
+</li>
+<li>Abstract Factory:
+<ul>
+<li>Client does not know which objects it is getting, since it only deals with interfaces</li>
+<li>It is easy to use the interface, since similar factories are grouped together</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>&nbsp;</p>
+<p>2. Adapter vs Decorator</p>
+<ul>
+<li>Problem
+<ul>
+<li>Adapter:
+<ul>
+<li>Used when incompatible interfaces need to work together</li>
+</ul>
+</li>
+<li>Decorator:
+<ul>
+<li>Used when responsibilities need to be added/removed dynamically</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Solution
+<ul>
+<li>Adapter:
+<ul>
+<li>Certain processes are ran though the adapter, which converts the necessary information to whatever the adaptee wants</li>
+</ul>
+</li>
+<li>Decorator:
+<ul>
+<li>Creates a decorator object that has operations ran through it, and can be changed as needed</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Consequences
+<ul>
+<li>Adapter:
+<ul>
+<li>Class adapter: adapter is a subclass of the adaptee, and can override some of the behavior</li>
+<li>Object Adapter:&nbsp; Single adapter can work with a class and its subclasses, harder to override adaptee behavior</li>
+</ul>
+</li>
+<li>Decorator:
+<ul>
+<li>Allows for responsibilities to change at runtime</li>
+<li>Makes the program more flexible</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>&nbsp;</p>
+<p>3. Iterator vs Visitor</p>
+<ul>
+<li>Problem
+<ul>
+<li>Iterator:&nbsp;
+<ul>
+<li>Used when a container needs to be traversed to access the elements</li>
+</ul>
+</li>
+<li>Visitor:
+<ul>
+<li>Used to separate an algorithm from an object, and to add operations without modifying the structure</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Solution
+<ul>
+<li>Iterator:
+<ul>
+<li>Create a general iterator that keeps track of its location and what is there</li>
+</ul>
+</li>
+<li>Visitor:
+<ul>
+<li>Defines a visitor object containing an operation that is performed on other elements of the structure</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Consequences
+<ul>
+<li>Iterator:
+<ul>
+<li>Container specific, cannot be decoupled from the container</li>
+<li>General iterators can be created to work with subclasses</li>
+</ul>
+</li>
+<li>Visitor:
+<ul>
+<li>Algorithms involving several classes can be managed in a single location</li>
+<li>New classes need to be compatible with the visitor</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Citations:</p>
+<p><span style="font-size: 10pt;">&ldquo;Abstract factory pattern,&rdquo; <i>Wikipedia</i>, 21-Sep-2020. [Online]. Available: https://en.wikipedia.org/wiki/Abstract_factory_pattern. [Accessed: 18-Oct-2020].</span></p>
+<p><span style="font-size: 10pt;">&ldquo;Adapter pattern,&rdquo; <i>Wikipedia</i>, 02-Aug-2020. [Online]. Available: https://en.wikipedia.org/wiki/Adapter_pattern. [Accessed: 18-Oct-2020].</span></p>
+<p><span style="font-size: 10pt;">&ldquo;Decorator pattern,&rdquo; <i>Wikipedia</i>, 08-Sep-2020. [Online]. Available: https://en.wikipedia.org/wiki/Decorator_pattern. [Accessed: 18-Oct-2020].</span></p>
+<p><span style="font-size: 10pt;">&ldquo;Factory method pattern,&rdquo; <i>Wikipedia</i>, 29-Sep-2020. [Online]. Available: https://en.wikipedia.org/wiki/Factory_method_pattern. [Accessed: 18-Oct-2020].</span></p>
+<p><span style="font-size: 10pt;">&ldquo;Iterator pattern,&rdquo; <i>Wikipedia</i>, 29-Sep-2020. [Online]. Available: https://en.wikipedia.org/wiki/Iterator_pattern. [Accessed: 18-Oct-2020].</span></p>
+<p><span style="font-size: 10pt;">&ldquo;Visitor pattern,&rdquo; <i>Wikipedia</i>, 28-Sep-2020. [Online]. Available: https://en.wikipedia.org/wiki/Visitor_pattern. [Accessed: 18-Oct-2020].</span></p>
+<p>&nbsp;</p>
